@@ -1,0 +1,122 @@
+a:link,
+a:visited {
+    background-color: brown;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover,
+a:active {
+    background-color: lightcoral;
+}
+
+body {
+    background: linear-gradient(to right, transparent, #222 90%), url(../img/pic2.jpg), no-repeat;
+}
+
+.bar {
+    padding: 0;
+}
+
+.bar-section {
+    background: seagreen;
+}
+
+.column {
+    height: 500px;
+}
+
+.main-content {
+    height: 600px;
+}
+
+.column span {
+    background: wheat;
+    display: block;
+    height: 100%;
+}
+
+.bar-header .bar-section:hover {
+    background: lightgreen;
+    color: #fff;
+}
+
+.bar-header .bar-section {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* On mouse-over, add a deeper shadow */
+
+.card {
+    background: linear-gradient(to bottom, transparent, #222 90%), url(../img/pic2.jpg), no-repeat;
+    width: 567px;
+    margin-left: -53px;
+    margin-top: -50px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* Add some padding inside the card container */
+
+.card .container {
+    padding: 99px 17px;
+}
+
+.container {
+    width: 575px;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    color: wheat;
+}
+
+#panelp,
+#flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+#panelp {
+    padding: 50px;
+    display: none;
+}
+
+.h {
+    color: wheat;
+}
+
+#panelq {
+    padding: 50px;
+    display: none;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#panelv {
+    /*padding: 50px;*/
+    display: none;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    position: inherit;
+}
