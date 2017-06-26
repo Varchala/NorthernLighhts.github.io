@@ -1,5 +1,5 @@
-a:link,
-a:visited {
+a.button:link,
+a.button:visited {
     background-color: brown;
     color: white;
     padding: 14px 25px;
@@ -8,8 +8,15 @@ a:visited {
     display: inline-block;
 }
 
-a:hover,
-a:active {
+.quotes {
+    color: wheat;
+    font-family: Courier New;
+    font-style: normal;
+    text-align: center;
+}
+
+a.button:hover,
+a.button:active {
     background-color: lightcoral;
 }
 
@@ -23,6 +30,7 @@ body {
 
 .bar-section {
     background: seagreen;
+    position: relative;
 }
 
 .column {
@@ -83,21 +91,20 @@ footer {
     bottom: 0;
     left: 0;
     padding: 5px;
-    color: wheat;
-}
-
-#panelp,
-#flip {
-    padding: 5px;
-    text-align: center;
-    background-color: #e5eecc;
-    border: solid 1px #c3c3c3;
+    color: #777;
 }
 
 #panelp {
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+    position: relative;
     padding: 50px;
     display: none;
 }
+
+
+/*#panelp {}*/
 
 .h {
     color: wheat;
@@ -118,5 +125,5 @@ footer {
     text-align: center;
     align-content: center;
     align-items: center;
-    position: inherit;
+    position: relative;
 }
