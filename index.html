@@ -15,12 +15,14 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/demo.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+
 
     <div class="bar bar-header">
         <div class="bar-content">
@@ -47,7 +49,9 @@
         </div>
     </div>
 
+
     <div class="container">
+
         <div id="panelv">
             <video width="600px" height="500px" controls>
   <source src="video/aurora.mp4" type="video/mp4">
@@ -77,6 +81,7 @@
             </div>
         </div>
         <div id="panelq">
+
             <div class="scrollmenu">
                 <div class="card">
                     <div class="container">
@@ -85,7 +90,8 @@
                         <br> <br><a class="button" target="_blank" href="https://www.visitnorway.com/listings/svalbard-northern-lights-package-offer/9256/">Visit Savalbard</a>
                     </div>
 
-                    <img src="img\svalbard-mountain-tops.jpg" alt="Savalbard,Norway" style="width:100%">
+                    <img id="img" src="img\svalbard-mountain-tops.jpg" alt="Savalbard,Norway" style="width:100%" onclick="openModal();currentSlide(1)">
+
 
                     <div class="container">
                         <h4 class="h"><b>Jukkasjärvi, Sweden</b></h4>
@@ -93,30 +99,29 @@
                         <br> <br><a class="button" target="_blank" href="https://visitsweden.com/abisko-and-northern-lights/">Visit Jukkasjärvi</a>
                     </div>
 
-                    <img src="img\kiruna-northern-lights-sweden.jpg" alt="Jukkasjärvi, Sweden" style="width:100%">
+                    <img src="img\kiruna-northern-lights-sweden.jpg" alt="Jukkasjärvi, Sweden" style="width:100%" onclick="openModal();currentSlide(2)">
                     <div class="container">
                         <h4 class="h"><b>Reykjavik, Iceland</b></h4>
                         <a class="button" target="_blank" href="https://en.wikipedia.org/wiki/Reykjav%C3%ADk">Reykjavik on wikipedia</a>
                         <br><br> <a class="button" target="_blank" href="https://iceland.nordicvisitor.com/travel-deals/northern-lights-tours/?rf=g124-21&gclid=CjwKEAjwm7jKBRDE2_H_t8DVxzISJACwS9WbJwNWoyG4q-eyfiw9iu0xhkJ3o1MLXx4krscUKG4jXRoCLG3w_wcB">Visit Reykjavik</a>
                     </div>
 
-                    <img src="img\aurora-borealis-reykjavik.jpg" alt="Reykjavik, Iceland" style="width:100%">
+                    <img src="img\aurora-borealis-reykjavik.jpg" alt="Reykjavik, Iceland" style="width:100%" onclick="openModal();currentSlide(3)">
                     <div class="container">
                         <h4 class="h"><b> Northern Canada</b></h4>
                         <a class="button" target="_blank" href="https://en.wikipedia.org/wiki/Northern_Canada">Northern Canada on wikipedia</a>
                         <br><br> <a class="button" target="_blank" href="https://www.viator.com/Canada-tourism/Northern-Lights-Tours-in-Canada-tours-tickets/d75-t17076?pref=02">Visit Northern Canada</a>
                     </div>
 
-                    <img src="img\aurora-borealis-yellowknife-canada.jpg" alt=" Northern Canada" style="width:100%">
+                    <img src="img\aurora-borealis-yellowknife-canada.jpg" alt=" Northern Canada" style="width:100%" onclick="openModal();currentSlide(4)">
                     <div class="container">
                         <h4 class="h"><b>Kakslauttanen, Finland</b></h4>
                         <a class="button" target="_blank" href="https://en.wikipedia.org/wiki/Finland">Kakslauttanen on wikipedia</a>
                         <br> <br><a class="button" href="http://www.kakslauttanen.fi/en/" target="_blank">Visit Kakslauttanen</a>
                     </div>
-
-
-                    <img src="img\glass-igloo-lapland.jpg" alt="Kakslauttanen, Finland" style="width:100%">
+                    <img src="img\glass-igloo-lapland.jpg" alt="Kakslauttanen, Finland" style="width:100%" onclick="openModal();currentSlide(5)">
                 </div>
+
             </div>
         </div>
 
@@ -135,8 +140,47 @@
                
             </div>
     </div>-->
+
+    </div>
+
+    <div class="img container" id="imgc">
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+
+                    <img src="img\svalbard-mountain-tops.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+
+                    <img src="img\kiruna-northern-lights-sweden.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+
+                    <img src="img\aurora-borealis-reykjavik.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+
+                    <img src="img\aurora-borealis-yellowknife-canada.jpg" style="width:100%">
+                </div>
+
+
+                <div class="mySlides">
+
+                    <img src="img\glass-igloo-lapland.jpg" style="width:100%">
+                </div>
+
+            </div>
+
+        </div>
     </div>
     <script type="text/javascript" src="js/jquery-1.1.js">
+    </script>
+    <script type="text/javascript" src="js/javaScript-1.1.js">
     </script>
     <footer>
         &copy Made By Varchala Gnugapati
