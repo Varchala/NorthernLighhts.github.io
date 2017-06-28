@@ -6,6 +6,7 @@ function openModal() {
 
 function closeModal() {
     document.getElementById('myModal').style.display = "none";
+    document.getElementById('panelq').style.display = "block";
 }
 
 var slideIndex = 1;
